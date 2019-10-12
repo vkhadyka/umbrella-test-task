@@ -8,10 +8,17 @@ import CoreLocation
 
 typealias PlaceByCoordinatesCompletionHandler = (CLPlacemark?) -> Void
 
-class LocationService: NSObject {
+protocol LocationServiceProtocol: class {
+	var location: CLLocation? {get}
+	func setDelegate(delegate: LocationManagerDelegate)
+	func getPlaceByLocation(completion: @escaping PlaceByCoordinatesCompletionHandler)
+}
+
+class LocationService: NSObject, LocationServiceProtocol {
 
 	//MARK: Private variables
 	private var locationManager = CLLocationManager()
+	private var delegate: LocationManagerDelegate?
 
 	//MARK: Public variables
 	var location: CLLocation? {
@@ -24,6 +31,11 @@ class LocationService: NSObject {
 		locationManager.desiredAccuracy = kCLLocationAccuracyBest
 		locationManager.requestAlwaysAuthorization()
 	}
+
+	func setDelegate(delegate: LocationManagerDelegate) {
+		self.delegate = delegate
+	}
+
 }
 
 extension LocationService: CLLocationManagerDelegate {
@@ -32,14 +44,29 @@ extension LocationService: CLLocationManagerDelegate {
 			manager.requestLocation()
 		}
 	}
+
+	public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+		guard let delegate = delegate else {return}
+		delegate.didLocationUpdated()
+	}
+
+	public func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+		guard let delegate = delegate else {return}
+		delegate.failWithError(error: error)
+	}
 }
 
 extension LocationService {
 
 	//Get place by coordinates
-	func getPlaceByLocation(for location: CLLocation, completion: @escaping PlaceByCoordinatesCompletionHandler) {
+	func getPlaceByLocation(completion: @escaping PlaceByCoordinatesCompletionHandler) {
 
+		guard let location = location else {
+			completion(nil)
+			return
+		}
 		let geocoder = CLGeocoder()
+
 		geocoder.reverseGeocodeLocation(location, preferredLocale: nil) { placemarks, error in
 
 			guard error == nil else {

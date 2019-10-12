@@ -9,10 +9,15 @@ protocol MainPresenterProtocol: BasePresenterProtocol {
 	func updateWeather()
 }
 
+protocol LocationManagerDelegate: class {
+	func didLocationUpdated()
+	func failWithError(error: Error)
+}
+
 class MainPresenter: MainPresenterProtocol {
 
 	//MARK: Private variables
-	fileprivate var locationService: LocationService?
+	fileprivate var locationService: LocationServiceProtocol?
 	fileprivate var view: MainViewProtocol
 
 	init(view: MainViewProtocol){
@@ -21,21 +26,33 @@ class MainPresenter: MainPresenterProtocol {
 
 	func viewDidLoad() {
 		self.locationService = LocationService()
-		updateWeather()
+		self.locationService?.setDelegate(delegate: self)
 	}
 
 	func updateWeather() {
 
-		guard let coordinates = locationService?.location else {
+		guard let locationService = locationService else {return}
+
+		guard let coordinates = locationService.location else {
 			view.showError(errorMessage: "Unable to get coordinates")
 			return
 		}
 
-		locationService?.getPlaceByLocation(for: coordinates) { placemark in
+		locationService.getPlaceByLocation() { placemark in
 			guard let placemark = placemark else {
 				return
 			}
 
 		}
 	}
+}
+
+extension MainPresenter: LocationManagerDelegate {
+    func failWithError(error: Error) {
+		view.showError(errorMessage: error.localizedDescription)
+    }
+
+    func didLocationUpdated() {
+        updateWeather()
+    }
 }
