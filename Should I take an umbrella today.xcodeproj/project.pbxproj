@@ -11,10 +11,15 @@
 		4164B10AA2B3FD6C09BE8936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164BA70EE242BDC3058CF8D /* AppDelegate.swift */; };
 		4164B2D7D891A4A0E664C527 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4164BA407FFEE08A47FC65B8 /* LaunchScreen.storyboard */; };
 		4164B38BE4B33C3F67AF3E58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B81B206490EC9008D17E /* SceneDelegate.swift */; };
+		4164B73040EBFD4AC97D6DFE /* MainViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B73AD68560A35EFD29C2 /* MainViewProtocol.swift */; };
 		4164B7B608214C0D617464AF /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B78E28EDF5E355676780 /* UIStoryboard+Extension.swift */; };
 		4164B89E75AA482A87ACE974 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B0F90E729CD7ED29C90D /* Constants.swift */; };
+		4164B9DD3FDFA50F076C7CDF /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B2DCED9D83218BC1E753 /* BasePresenter.swift */; };
 		4164BA1690F8743B92D9AD15 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164BEA30C4076C63FA66E40 /* MainViewController.swift */; };
 		4164BB3B6F63E90D595D86E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4164B9BCB3C2DA7CA21FA2FF /* Main.storyboard */; };
+		4164BB9584C8215AF821CDDC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164BA66967D72C05402808D /* BaseViewController.swift */; };
+		4164BD322E92F397FA644088 /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B4172E9FA854604F30AD /* BaseViewProtocol.swift */; };
+		4164BFB735ECE22226E80CA9 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164BD6C59B64109F1A10F47 /* MainPresenter.swift */; };
 		598DF8DA1D7154DFF25A33C5 /* Pods_Should_I_take_an_umbrella_today.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B5A8696F6D5F64B7A6C290F /* Pods_Should_I_take_an_umbrella_today.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,11 +29,16 @@
 		2012BBC22351E7B100565D6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20387D7D81F94E561251B616 /* Pods-Should I take an umbrella today.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Should I take an umbrella today.release.xcconfig"; path = "Target Support Files/Pods-Should I take an umbrella today/Pods-Should I take an umbrella today.release.xcconfig"; sourceTree = "<group>"; };
 		4164B0F90E729CD7ED29C90D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4164B2DCED9D83218BC1E753 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		4164B4172E9FA854604F30AD /* BaseViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewProtocol.swift; sourceTree = "<group>"; };
+		4164B73AD68560A35EFD29C2 /* MainViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewProtocol.swift; sourceTree = "<group>"; };
 		4164B78E28EDF5E355676780 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
 		4164B81B206490EC9008D17E /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4164B9BCB3C2DA7CA21FA2FF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4164BA407FFEE08A47FC65B8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4164BA66967D72C05402808D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		4164BA70EE242BDC3058CF8D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4164BD6C59B64109F1A10F47 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		4164BEA30C4076C63FA66E40 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6B5A8696F6D5F64B7A6C290F /* Pods_Should_I_take_an_umbrella_today.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Should_I_take_an_umbrella_today.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED9AA8B067954D688F94D76 /* Pods-Should I take an umbrella today.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Should I take an umbrella today.debug.xcconfig"; path = "Target Support Files/Pods-Should I take an umbrella today/Pods-Should I take an umbrella today.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +84,8 @@
 				4164BA24B9A59EAE42F7799A /* Delegates */,
 				4164B0F90E729CD7ED29C90D /* Constants.swift */,
 				4164BA3675FC33BA7D348D70 /* Extensions */,
+				4164B7CD0A030B526374B359 /* Base */,
+				4164B5B811EF0D20F4A4E9F9 /* Controls */,
 			);
 			path = "Should I take an umbrella today";
 			sourceTree = "<group>";
@@ -82,8 +94,27 @@
 			isa = PBXGroup;
 			children = (
 				4164BEA30C4076C63FA66E40 /* MainViewController.swift */,
+				4164B73AD68560A35EFD29C2 /* MainViewProtocol.swift */,
+				4164BD6C59B64109F1A10F47 /* MainPresenter.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4164B5B811EF0D20F4A4E9F9 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		4164B7CD0A030B526374B359 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4164B4172E9FA854604F30AD /* BaseViewProtocol.swift */,
+				4164BA66967D72C05402808D /* BaseViewController.swift */,
+				4164B2DCED9D83218BC1E753 /* BasePresenter.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		4164BA24B9A59EAE42F7799A /* Delegates */ = {
@@ -249,6 +280,11 @@
 				4164B38BE4B33C3F67AF3E58 /* SceneDelegate.swift in Sources */,
 				4164B89E75AA482A87ACE974 /* Constants.swift in Sources */,
 				4164B7B608214C0D617464AF /* UIStoryboard+Extension.swift in Sources */,
+				4164BD322E92F397FA644088 /* BaseViewProtocol.swift in Sources */,
+				4164BB9584C8215AF821CDDC /* BaseViewController.swift in Sources */,
+				4164B9DD3FDFA50F076C7CDF /* BasePresenter.swift in Sources */,
+				4164B73040EBFD4AC97D6DFE /* MainViewProtocol.swift in Sources */,
+				4164BFB735ECE22226E80CA9 /* MainPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,12 +411,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BP9FHB995R;
 				INFOPLIST_FILE = "Should I take an umbrella today/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.umbrella.Should-I-take-an-umbrella-today";
+				PRODUCT_BUNDLE_IDENTIFIER = com.umbrella.weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -393,12 +430,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BP9FHB995R;
 				INFOPLIST_FILE = "Should I take an umbrella today/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.umbrella.Should-I-take-an-umbrella-today";
+				PRODUCT_BUNDLE_IDENTIFIER = com.umbrella.weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

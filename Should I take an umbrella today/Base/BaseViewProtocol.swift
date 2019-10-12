@@ -5,5 +5,8 @@
 
 import Foundation
 
-protocol BaseViewProtocol {
+protocol BaseViewProtocol: class {
+	func showHUD()
+	func hideHUD()
+	func showError(errorMessage: String)
 }

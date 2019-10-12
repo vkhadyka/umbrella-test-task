@@ -5,5 +5,5 @@
 
 import Foundation
 
-protocol MainViewProtocol {
+protocol MainViewProtocol: BaseViewProtocol {
 }

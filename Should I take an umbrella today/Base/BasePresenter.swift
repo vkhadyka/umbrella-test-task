@@ -6,4 +6,13 @@
 import Foundation
 
 protocol BasePresenterProtocol: class {
+	func viewDidLoad()
+}
+
+class BasePresenter : BasePresenterProtocol {
+    func viewDidLoad() {
+
+    }
+
+
 }

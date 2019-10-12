@@ -8,11 +8,13 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: BaseViewController, MainViewProtocol {
+
+	var presenter: MainPresenterProtocol!
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view.
+		presenter.viewDidLoad()
 	}
 
 

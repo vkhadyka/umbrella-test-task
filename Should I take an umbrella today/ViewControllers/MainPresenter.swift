@@ -5,5 +5,18 @@
 
 import Foundation
 
-protocol MainPresenter {
+protocol MainPresenterProtocol: BasePresenterProtocol {
+}
+
+class MainPresenter: MainPresenterProtocol {
+
+	//MARK: Private variables
+	fileprivate var view: MainViewProtocol
+
+	init(view: MainViewProtocol){
+		self.view = view
+	}
+	func viewDidLoad() {
+
+	}
 }
