@@ -19,6 +19,7 @@
 		4164BB3B6F63E90D595D86E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4164B9BCB3C2DA7CA21FA2FF /* Main.storyboard */; };
 		4164BB9584C8215AF821CDDC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164BA66967D72C05402808D /* BaseViewController.swift */; };
 		4164BD322E92F397FA644088 /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B4172E9FA854604F30AD /* BaseViewProtocol.swift */; };
+		4164BF704A6144682D629D0C /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164BFC29CFCD70EE9A4B14A /* LocationService.swift */; };
 		4164BFB735ECE22226E80CA9 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164BD6C59B64109F1A10F47 /* MainPresenter.swift */; };
 		598DF8DA1D7154DFF25A33C5 /* Pods_Should_I_take_an_umbrella_today.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B5A8696F6D5F64B7A6C290F /* Pods_Should_I_take_an_umbrella_today.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		4164BA70EE242BDC3058CF8D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4164BD6C59B64109F1A10F47 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		4164BEA30C4076C63FA66E40 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4164BFC29CFCD70EE9A4B14A /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		6B5A8696F6D5F64B7A6C290F /* Pods_Should_I_take_an_umbrella_today.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Should_I_take_an_umbrella_today.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED9AA8B067954D688F94D76 /* Pods-Should I take an umbrella today.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Should I take an umbrella today.debug.xcconfig"; path = "Target Support Files/Pods-Should I take an umbrella today/Pods-Should I take an umbrella today.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +88,7 @@
 				4164BA3675FC33BA7D348D70 /* Extensions */,
 				4164B7CD0A030B526374B359 /* Base */,
 				4164B5B811EF0D20F4A4E9F9 /* Controls */,
+				4164B97C02637E7EF95E31DB /* Services */,
 			);
 			path = "Should I take an umbrella today";
 			sourceTree = "<group>";
@@ -115,6 +118,14 @@
 				4164B2DCED9D83218BC1E753 /* BasePresenter.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		4164B97C02637E7EF95E31DB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4164BFC29CFCD70EE9A4B14A /* LocationService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		4164BA24B9A59EAE42F7799A /* Delegates */ = {
@@ -285,6 +296,7 @@
 				4164B9DD3FDFA50F076C7CDF /* BasePresenter.swift in Sources */,
 				4164B73040EBFD4AC97D6DFE /* MainViewProtocol.swift in Sources */,
 				4164BFB735ECE22226E80CA9 /* MainPresenter.swift in Sources */,
+				4164BF704A6144682D629D0C /* LocationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

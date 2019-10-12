@@ -17,6 +17,4 @@ class MainViewController: BaseViewController, MainViewProtocol {
 		presenter.viewDidLoad()
 	}
 
-
 }
-
