@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  Should I take an umbrella today
 //
 //  Created by Vadim Khadyka on 10/12/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
