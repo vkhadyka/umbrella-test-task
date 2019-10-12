@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2012BBB02351E7AF00565D6B"
+               BuildableName = "Should I take an umbrella today.app"
+               BlueprintName = "Should I take an umbrella today"
+               ReferencedContainer = "container:Should I take an umbrella today.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2012BBB02351E7AF00565D6B"
+            BuildableName = "Should I take an umbrella today.app"
+            BlueprintName = "Should I take an umbrella today"
+            ReferencedContainer = "container:Should I take an umbrella today.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
