@@ -13,6 +13,4 @@ class BasePresenter : BasePresenterProtocol {
     func viewDidLoad() {
 
     }
-
-
 }

@@ -29,7 +29,8 @@ class LocationService: NSObject, LocationServiceProtocol {
 		super.init()
 		locationManager.delegate = self
 		locationManager.desiredAccuracy = kCLLocationAccuracyBest
-		locationManager.requestAlwaysAuthorization()
+		locationManager.showsBackgroundLocationIndicator = true
+		locationManager.requestWhenInUseAuthorization()
 	}
 
 	func setDelegate(delegate: LocationManagerDelegate) {
@@ -67,6 +68,7 @@ extension LocationService {
 		}
 		let geocoder = CLGeocoder()
 
+		//convert coordinates ro user-friendly place
 		geocoder.reverseGeocodeLocation(location, preferredLocale: nil) { placemarks, error in
 
 			guard error == nil else {
