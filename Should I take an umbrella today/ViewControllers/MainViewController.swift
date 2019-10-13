@@ -17,4 +17,21 @@ class MainViewController: BaseViewController, MainViewProtocol {
 		presenter.viewDidLoad()
 	}
 
+	//MARK: Display presenter data
+	func display(city: String, country: String) {
+
+	}
+
+	func display(lastUpdateDate: Date) {
+
+	}
+
+	func display(image: String) {
+
+	}
+
+	func display(weatherDescription: String) {
+
+	}
+
 }
