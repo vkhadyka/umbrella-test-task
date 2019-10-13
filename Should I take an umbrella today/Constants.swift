@@ -12,3 +12,7 @@ struct ApiKeys {
 struct ViewControllers {
     static let main = "MainViewController"
 }
+
+struct Endpoints {
+    static let baseURL = "https://api.openweathermap.org/data/2.5/"
+}
