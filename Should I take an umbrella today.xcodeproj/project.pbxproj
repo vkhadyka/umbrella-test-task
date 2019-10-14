@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2012BBBE2351E7B100565D6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2012BBBD2351E7B100565D6B /* Assets.xcassets */; };
+		4164B08DD3EAFEC2BA74C28E /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B524231186D88AD965D5 /* Date+Extension.swift */; };
 		4164B10AA2B3FD6C09BE8936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164BA70EE242BDC3058CF8D /* AppDelegate.swift */; };
 		4164B1EE81990CCFCD269CA1 /* ApiGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B2B8F00427DD65783FF4 /* ApiGateway.swift */; };
 		4164B2D7D891A4A0E664C527 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4164BA407FFEE08A47FC65B8 /* LaunchScreen.storyboard */; };
@@ -29,7 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2012BBB12351E7AF00565D6B /* Should I take an umbrella today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Should I take an umbrella today.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2012BBB12351E7AF00565D6B /* Umbrella?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Umbrella?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2012BBBD2351E7B100565D6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2012BBC22351E7B100565D6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20387D7D81F94E561251B616 /* Pods-Should I take an umbrella today.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Should I take an umbrella today.release.xcconfig"; path = "Target Support Files/Pods-Should I take an umbrella today/Pods-Should I take an umbrella today.release.xcconfig"; sourceTree = "<group>"; };
@@ -37,6 +38,7 @@
 		4164B2B8F00427DD65783FF4 /* ApiGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiGateway.swift; sourceTree = "<group>"; };
 		4164B2DCED9D83218BC1E753 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		4164B4172E9FA854604F30AD /* BaseViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewProtocol.swift; sourceTree = "<group>"; };
+		4164B524231186D88AD965D5 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		4164B73AD68560A35EFD29C2 /* MainViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewProtocol.swift; sourceTree = "<group>"; };
 		4164B78E28EDF5E355676780 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
 		4164B7D0E2D79B8FA024B3EE /* OpenWeatherEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenWeatherEntity.swift; sourceTree = "<group>"; };
@@ -79,7 +81,7 @@
 		2012BBB22351E7AF00565D6B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2012BBB12351E7AF00565D6B /* Should I take an umbrella today.app */,
+				2012BBB12351E7AF00565D6B /* Umbrella?.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				4164B78E28EDF5E355676780 /* UIStoryboard+Extension.swift */,
+				4164B524231186D88AD965D5 /* Date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -226,7 +229,7 @@
 			);
 			name = "Should I take an umbrella today";
 			productName = "Should I take an umbrella today";
-			productReference = 2012BBB12351E7AF00565D6B /* Should I take an umbrella today.app */;
+			productReference = 2012BBB12351E7AF00565D6B /* Umbrella?.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -337,6 +340,7 @@
 				4164BAE518EFCC0205169542 /* OpenWeatherEntity.swift in Sources */,
 				4164B1EE81990CCFCD269CA1 /* ApiGateway.swift in Sources */,
 				4164B4FA919F686864C8DC4B /* Result.swift in Sources */,
+				4164B08DD3EAFEC2BA74C28E /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,7 +474,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.umbrella.weather;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Umbrella?";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -489,7 +493,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.umbrella.weather;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Umbrella?";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
