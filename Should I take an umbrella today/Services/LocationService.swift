@@ -12,6 +12,7 @@ protocol LocationServiceProtocol: class {
 	var location: CLLocation? {get}
 	func setDelegate(delegate: LocationManagerDelegate)
 	func getPlaceByLocation(completion: @escaping PlaceByCoordinatesCompletionHandler)
+	func requestLocation()
 }
 
 class LocationService: NSObject, LocationServiceProtocol {
@@ -37,6 +38,9 @@ class LocationService: NSObject, LocationServiceProtocol {
 		self.delegate = delegate
 	}
 
+	func requestLocation() {
+		locationManager.requestLocation()
+	}
 }
 
 extension LocationService: CLLocationManagerDelegate {
