@@ -14,10 +14,60 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last update date: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APj-zx-KgH">
+                                <rect key="frame" x="20" y="830" width="79" height="12"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjM-Ma-u8w">
+                                <rect key="frame" x="103" y="829.5" width="4.5" height="13"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="11"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="umbrella_icon" translatesAutoresizingMaskIntoConstraints="NO" id="fuj-Xi-OXH">
+                                <rect key="frame" x="0.0" y="140" width="414" height="616"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpg-Wk-IxN">
+                                <rect key="frame" x="8" y="764" width="398" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yjM-Ma-u8w" firstAttribute="leading" secondItem="APj-zx-KgH" secondAttribute="trailing" constant="4" id="21J-10-8ek"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="APj-zx-KgH" secondAttribute="bottom" constant="20" id="267-wT-upL"/>
+                            <constraint firstItem="APj-zx-KgH" firstAttribute="centerY" secondItem="yjM-Ma-u8w" secondAttribute="centerY" id="3Tp-hD-JUD"/>
+                            <constraint firstItem="APj-zx-KgH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9So-qd-GRa"/>
+                            <constraint firstItem="fuj-Xi-OXH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DTF-p0-NcC"/>
+                            <constraint firstItem="tpg-Wk-IxN" firstAttribute="top" secondItem="fuj-Xi-OXH" secondAttribute="bottom" constant="8" id="GOw-sz-C2Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tpg-Wk-IxN" secondAttribute="trailing" constant="8" id="LY3-JT-uiF"/>
+                            <constraint firstItem="fuj-Xi-OXH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h4l-Q1-d7k"/>
+                            <constraint firstItem="fuj-Xi-OXH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="h6m-Ju-ivp"/>
+                            <constraint firstItem="fuj-Xi-OXH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jcE-ne-JCs"/>
+                            <constraint firstItem="tpg-Wk-IxN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="kWp-Xw-rCk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fuj-Xi-OXH" secondAttribute="trailing" id="plz-db-VOR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="bmI-2n-GrX"/>
+                    <navigationItem key="navigationItem" id="bmI-2n-GrX">
+                        <barButtonItem key="rightBarButtonItem" image="refreshIcon" id="CvQ-bF-cqo">
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="refreshButtonTapped:" destination="BYZ-38-t0r" id="gWi-Ym-Uyc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="tpg-Wk-IxN" id="iYX-4x-zab"/>
+                        <outlet property="umbrellaImage" destination="fuj-Xi-OXH" id="4mS-ZT-lsc"/>
+                        <outlet property="updateDate" destination="yjM-Ma-u8w" id="hUu-PW-bdY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -31,6 +81,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="tSM-ps-gfT">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -42,4 +95,8 @@
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="refreshIcon" width="30" height="30"/>
+        <image name="umbrella_icon" width="175.5" height="175.5"/>
+    </resources>
 </document>

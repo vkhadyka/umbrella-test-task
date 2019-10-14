@@ -16,3 +16,7 @@ struct ViewControllers {
 struct Endpoints {
     static let baseURL = "https://api.openweathermap.org/data/2.5/"
 }
+
+struct UserDefaultKeys {
+    static let lastUpdateDate = "lastUpdateDate"
+}
